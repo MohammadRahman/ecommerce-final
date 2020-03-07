@@ -1,0 +1,19 @@
+.button {
+  border: 1px solid black;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #e4ad3e;
+  padding: 20px;
+  margin: 3px auto;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #327657;
+    border-color: #e4ad3e;
+  }
+}
