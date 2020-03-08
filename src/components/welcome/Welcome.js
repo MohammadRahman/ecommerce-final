@@ -15,8 +15,10 @@ export const Welcome = () => {
           {/* <CustomButton name="learn more"></CustomButton> */}
           WIKI
         </Link>
-
-        <CustomButton name="learn more"></CustomButton>
+        <Link to="/Wiki" className="button">
+          {/* <CustomButton name="learn more"></CustomButton> */}
+          Learn more
+        </Link>
       </div>
     </div>
   );
