@@ -17,7 +17,7 @@ export const Welcome = () => {
         </Link>
         <Link to="/Wiki" className="button">
           {/* <CustomButton name="learn more"></CustomButton> */}
-          Learn more
+          Go to Project
         </Link>
       </div>
     </div>
