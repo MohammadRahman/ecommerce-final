@@ -1,0 +1,23 @@
+.section-1 {
+  background-color: #54505d;
+
+  .section-1 {
+    height: 750px;
+
+    .text-body-container {
+      margin-top: 70px;
+      padding: 30px;
+
+      .content-text,
+      p {
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+  }
+  .section-2 {
+    margin-top: 40px;
+    height: 400px;
+    background-color: blue;
+  }
+}

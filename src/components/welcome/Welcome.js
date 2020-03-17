@@ -15,7 +15,7 @@ export const Welcome = () => {
           {/* <CustomButton name="learn more"></CustomButton> */}
           WIKI
         </Link>
-        <Link to="/Wiki" className="button">
+        <Link to="/landing-page" className="button">
           {/* <CustomButton name="learn more"></CustomButton> */}
           Go to Project
         </Link>

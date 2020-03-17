@@ -62,6 +62,7 @@ export class Wiki extends React.Component {
           <div className="title lead">
             <h1>TECH STACK</h1>
           </div>
+          <hr />
           <div className="row">
             <div className="col-md-3">
               <div className="title lead">
