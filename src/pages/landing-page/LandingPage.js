@@ -20,24 +20,36 @@ export class LandingPage extends Component {
             </div>
           </div>
         </div>
-        <div className="section-2">
-          <div className="row">
-            <h2>Services</h2>
+        <div className="section-2 py-5">
+          <h3 className="text-center lead ">Services</h3>
+
+          <div className="row mt-5">
             <div className="col-md-3">
-              <h3> Shop in 8 languages</h3>
-              <h5>Browse or search in your language</h5>
+              <h2 className="text-center">
+                <i class="fas fa-comments fa-3x"></i>
+              </h2>
+              <h5 className="mt-4 text-center">24/7 customer service</h5>
             </div>
+
             <div className="col-md-3">
-              <h2>Shop in 64 currencies</h2>
-              <h5>Freedom to choose your preferred currency</h5>
+              <h2 className="text-center">
+                <i class="fas fa-key fa-3x"></i>
+              </h2>
+              <h5 className="mt-4 text-center">Secure Payment</h5>
             </div>
+
             <div className="col-md-3">
-              <h2>Products that ship to you</h2>
-              <h5>Find top products that ship to you</h5>
+              <h2 className="text-center">
+                <i class="fas fa-globe fa-3x"></i>
+              </h2>
+              <h5 className="mt-4 text-center">World wide shopping</h5>
             </div>
+
             <div className="col-md-3">
-              <h2>Transparent costs</h2>
-              <h5>We estimate shipping and custom fees on your behalf</h5>
+              <h2 className="text-center">
+                <i class="fas fa-search-location fa-3x"></i>
+              </h2>
+              <h5 className="mt-4 text-center">Track your products</h5>
             </div>
           </div>
         </div>

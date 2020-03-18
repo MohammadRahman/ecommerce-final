@@ -1,11 +1,12 @@
-img {
-  //   background-color: ;
-  height: 400px;
-  width: 100%;
-}
 .carusoul-container {
   border: 1px solid black;
-  background-size: cover;
-  background-position: center;
   width: 100%;
+
+  .image {
+    //   background-color: ;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
 }

@@ -17,19 +17,19 @@ export class Carrasoul extends Component {
       <div className="carusoul-container">
         <Slider {...settings}>
           <div className="">
-            <img src="/images/car1.png" alt="" />
+            <img className="image" src="/images/car1.png" alt="" />
+          </div>
+          <div className="image">
+            <img className="image" src="/images/car2.jpg" alt="" />
+          </div>
+          <div className="image">
+            <img className="image" src="/images/car3.jpg" alt="" />
           </div>
           <div>
-            <img src="/images/car2.jpg" alt="" />
+            <img className="image" src="/images/car4.jpeg" alt="" />
           </div>
-          <div>
-            <img src="/images/car3.jpg" alt="" />
-          </div>
-          <div>
-            <img src="/images/car4.jpeg" alt="" />
-          </div>
-          <div>
-            <img src="/images/car5.jpeg" alt="" />
+          <div className="">
+            <img className="image" src="/images/car5.jpeg" alt="" />
           </div>
         </Slider>
       </div>
