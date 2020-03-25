@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./landingPage.scss";
-import { Navbar } from "../../components/navbar/Navbar";
+import Navbar from "../../components/navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
 import Carrasoul from "../../components/carrasoul/Carrasoul";
 import { TextBody } from "../../components/text-body/TextBody";

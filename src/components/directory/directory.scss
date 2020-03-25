@@ -1,0 +1,11 @@
+.directory-container {
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &:hover {
+    cursor: pointer;
+    background-color: #e8b541;
+  }
+}
