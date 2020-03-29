@@ -1,11 +1,16 @@
-const initState = {};
+import { addItemToCart } from './CartUtils';
+const initState = {
+  cartItems:[]
+};
 const cartReducer = (state = initState, action) => {
   switch (action.type) {
-    case "SOHW_CART_DROPDOWN": {
+    case 'ADD_ITEM': 
       return {
-        ...state
+        ...state,
+        cartItems:addItemToCart(state.cartItems,action.payload)
       };
+      default:return state
     }
-  }
+  
 };
 export default cartReducer;

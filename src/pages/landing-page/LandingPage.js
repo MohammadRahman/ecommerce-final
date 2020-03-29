@@ -8,8 +8,7 @@ import { TextBody } from "../../components/text-body/TextBody";
 export class LandingPage extends Component {
   render() {
     return (
-      <div>
-        <Navbar></Navbar>
+      <>
         <div className="section-1">
           <div className="row">
             <div className="col-md-6">
@@ -55,7 +54,7 @@ export class LandingPage extends Component {
         </div>
 
         <Footer></Footer>
-      </div>
+      </>
     );
   }
 }
