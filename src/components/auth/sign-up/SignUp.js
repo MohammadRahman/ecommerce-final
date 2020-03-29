@@ -11,7 +11,7 @@ export class SignUp extends Component {
             errors:{}
         }
     }
-
+// Onchange event Handler
     onChangeHandler = e => {
         this.setState({ [e.target.name]: e.target.value });
     }
