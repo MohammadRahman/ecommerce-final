@@ -1,6 +1,6 @@
 import React from "react";
 import "./wiki.scss";
-import { Intro } from "../intro/Intro";
+import { Intro } from "../intro-section/Intro";
 import { Link } from "react-router-dom";
 
 export class Wiki extends React.Component {
@@ -31,8 +31,32 @@ export class Wiki extends React.Component {
   render() {
     // const { technologies } = this.state;
     return (
+    
+    // new styles start from here.!
+
       <div className="main-container">
-        <div className="title">
+        <div className="section-title"><h2>Wiki Page</h2></div>
+        <div className="container-content-one">
+          <div className="content-one-left-member">
+            <h2>Obaidur Rahman</h2>
+            <span className="sub-title">Fullstack Developer</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          <div className="content-one-right-member">
+            <img className="content-image" src="/images/img_s.svg" alt=""/>
+          </div>
+        </div>
+        <div className="content-container-two">
+          <div className="content">Hello Dear.! </div>
+          <div className="content">Hello Dear.! </div>
+          <div className="content">Hello Dear.! </div>
+          <div className="content">Hello Dear.! </div>
+          
+          
+        </div>
+    </div>
+      // <div className="main-container">
+      /* <div className="title">
           <h1>WIKI</h1>
         </div>
         <div className="section-1">
@@ -123,6 +147,8 @@ export class Wiki extends React.Component {
           </div>
         </div>
       </div>
+    ); */
+
     );
   }
 }

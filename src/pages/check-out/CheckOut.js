@@ -1,10 +1,11 @@
 import React from 'react'
-import './checkOut.scss'
-// import CartDropDown from '../../components/cart-drop-down/CartDropDown'
-import { CartItem } from '../../components/cart-items/CartItem'
+import './checkOut.scss';
+import {createStructuredSelector} from 'reselect'
+import { CartItem } from '../../components/cart/cart-items/CartItem'
+import { selectCartTotal, selectCartItems} from '../../redux/reducers/cart-reducer/cart-seloctor/CartSelector'
 import {connect} from 'react-redux'
 
-const CheckOut = ({ cartItems }) => {
+const CheckOut = ({ cartItems, total }) => {
     return (
         <div className="check-out-container">
             <div className="header">
@@ -32,12 +33,18 @@ const CheckOut = ({ cartItems }) => {
                         )
                     : <span className="lead text-center text-danger">Your Cart is Empty</span>
             }
-            
+            <hr></hr>
+            <div className="sub-total">
+                <div className="title">total -</div>
+                <div className="price">${total}</div>
+            </div>
             
         </div>
     )
 }
-const mapStateToProps = state => ({
-    cartItems:state.cart.cartItems
+const mapStateToProps = createStructuredSelector({
+    cartItems: selectCartItems,
+    total: selectCartTotal
+    
   })
   export default connect(mapStateToProps) (CheckOut);

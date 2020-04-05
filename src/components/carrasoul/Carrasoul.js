@@ -7,11 +7,13 @@ import "slick-carousel/slick/slick-theme.css";
 export class Carrasoul extends Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoPlay: true,
+      autoPlaySpeed:2000
     };
     return (
       <div className="carusoul-container">

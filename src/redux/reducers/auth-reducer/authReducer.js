@@ -2,6 +2,15 @@ const initState = {
     currentUser:null
 }
 const authReducer = (state = initState, action) => {
-    return state;
+    switch (action.type) {
+        case "SET_CURRENT_USER": 
+            return {
+                ...state,
+                currentUser:action.payload
+            }
+            default:
+                { return state }  
+    }
+
 }
-export default authReducer
+export default authReducer;

@@ -36,16 +36,16 @@ export const Footer = () => {
           <p>Please follow us on our social media platform links</p>
           <div className="row">
             <div className="col-3">
-              <i class="fab fa-instagram fa-3x"></i>
+              <i class="insta-hover fab fa-instagram fa-3x"></i>
             </div>
             <div className="col-3">
-              <i class="fab fa-facebook-f fa-3x"></i>
+              <i class="facebook-hover fab fa-facebook-f fa-3x"></i>
             </div>
             <div className="col-3">
-              <i class="fab fa-twitter fa-3x"></i>
+              <i class="twitter-hover fab fa-twitter fa-3x"></i>
             </div>
             <div className="col-md-3">
-              <i class="fab fa-linkedin-in fa-3x"></i>
+              <i class="linked-hover fab fa-linkedin-in fa-3x"></i>
             </div>
           </div>
         </div>

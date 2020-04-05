@@ -1,5 +1,4 @@
 .carusoul-container {
-  border: 1px solid black;
   width: 100%;
 
   .image {
@@ -8,5 +7,10 @@
     width: 100%;
     background-size: cover;
     background-position: center;
+
+    &:hover{
+      transform: rotate(7.5deg);
+      
+    }
   }
 }

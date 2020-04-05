@@ -6,8 +6,8 @@ export class Directory extends Component {
     sections: [
       {
         id: 1,
-        title: "Hats",
-        imageUrl: "/images/menu_images/img4.jpeg"
+        title: "Womens",
+        imageUrl: "/images/menu_images/img.jpg"
       },
       {
         id: 2,
@@ -16,13 +16,14 @@ export class Directory extends Component {
       },
       {
         id: 3,
-        title: "Sneakers",
+        title: "Shoes",
         imageUrl: "/images/menu_images/img3.jpg"
       },
       {
         id: 4,
-        title: "Womens",
-        imageUrl: "/images/menu_images/img.jpg"
+        title: "Hats",
+        imageUrl: "/images/menu_images/img4.jpeg"
+       
       },
       {
         id: 5,
@@ -43,5 +44,6 @@ export class Directory extends Component {
     );
   }
 }
+
 
 export default Directory;

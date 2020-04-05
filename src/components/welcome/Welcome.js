@@ -6,17 +6,14 @@ import { Link } from "react-router-dom";
 export const Welcome = () => {
   return (
     <div className="welcome-container">
-      {/* <h1>Software Development Project</h1> */}
       <div className="image-container">
         <img src="/images/logo.svg" alt="" />
       </div>
       <div className="content">
         <Link to="/Wiki" className="button">
-          {/* <CustomButton name="learn more"></CustomButton> */}
           WIKI
         </Link>
-        <Link to="/landing-page" className="button">
-          {/* <CustomButton name="learn more"></CustomButton> */}
+        <Link to="/landing" className="button">
           Go to Project
         </Link>
       </div>

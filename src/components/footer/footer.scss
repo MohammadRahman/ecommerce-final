@@ -6,4 +6,28 @@
   li {
     background-color: #343a40;
   }
+  .insta-hover{
+    opacity: 0.7;
+    &:hover{
+      color:#b241be ;
+    }
+  }
+  .facebook-hover{
+    &:hover{
+      color: #2e4f88;
+    }
+  }
+  .twitter-hover{
+    &:hover{
+      color: #3aa2ec;
+    }
+  }
+  .linked-hover{
+    &:hover{
+      color: #2877b5;
+    }
+  }
+
+  
+  
 }

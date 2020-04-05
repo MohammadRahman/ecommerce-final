@@ -1,7 +1,7 @@
 import React from "react";
 import "./homepage.scss";
 import { Welcome } from "../../components/welcome/Welcome";
-import { Intro } from "../../components/intro/Intro";
+import { Intro } from "../../components/intro-section/Intro";
 
 export const Homepage = () => {
   return (

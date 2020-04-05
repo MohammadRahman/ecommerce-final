@@ -1,5 +1,11 @@
+.landing-page-image{
+  // background-image: url('/images/d.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .section-1 {
-  background-color: #54505d;
+  background-color: #ff4c68;
   max-height: 750px;
 
   .text-body-container {
@@ -14,6 +20,13 @@
   }
 }
 .section-2 {
-  background-color: #d79c39;
+  // background-color: #b0e5f7;
   max-height: 750px;
+.icon{
+color:#ef8172;
+
+&:hover{
+  color: #ff4c68;
+}
+}
 }

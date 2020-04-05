@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-import {InputComponent} from '../../input-components/InputComponent'
+import {InputComponent} from '../input-components/InputComponent'
 import {signInWithGoogle} from '../../../firebase/config'
+import { Link } from 'react-router-dom';
+import {auth} from '../../../firebase/config'
+import { connect } from 'react-redux';
 
 
 
@@ -20,7 +23,7 @@ export class SignIn extends Component {
         })
     }
 
-    onSubmitHandler = e => {
+    onSubmitHandler = async e => {
         e.preventDefault();
        
         const { email, password, errors } = this.state;
@@ -36,7 +39,9 @@ export class SignIn extends Component {
             return;
         }
         
-        console.log(this.state);
+        try {
+      
+            await auth.signInWithEmailAndPassword(email, password);
 
         // to Clear the state after submit
         this.setState({
@@ -44,6 +49,10 @@ export class SignIn extends Component {
             password: '',
             errors:{}
         })
+        } catch (error) {
+            console.log(error)
+        }
+
 }
 
     render() {
@@ -56,8 +65,11 @@ export class SignIn extends Component {
                         <form onSubmit={this.onSubmitHandler}>
                             <InputComponent label="Email" name="email" type="text" value={email} onChange={this.onChangeHandler} error={errors.email} />
                             <InputComponent label="Password" name="password" type="password" value={password} onChange={this.onChangeHandler} error={errors.password} />
-                            <input className="btn btn-success btn-block" type="submit" value="Sign-in" />
-                            <input className="btn btn-dark btn-block" onClick={signInWithGoogle} value="Google Sign-in"/>
+                            <div className="sign-up-link">
+                                <Link to="/sign-up">create account here?</Link>
+                            </div>
+                            <button className="btn btn-success btn-block" type="submit" >Sign-in</button>
+                            <button className="btn btn-dark btn-block" onClick={signInWithGoogle} type="submit">Google Sign-in</button>
                         </form>
                     </div>
                 </div>
@@ -66,4 +78,4 @@ export class SignIn extends Component {
     }
 }
 
-export default SignIn
+export default SignIn;

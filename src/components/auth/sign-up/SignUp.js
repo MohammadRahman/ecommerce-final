@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { InputComponent } from '../../input-components/InputComponent';
+import { InputComponent } from '../input-components/InputComponent';
+import { auth, createUserProfileDocument } from '../../../firebase/config';
+
 export class SignUp extends Component {
     constructor() {
         super();
@@ -38,15 +40,24 @@ export class SignUp extends Component {
             return;
         }
 
-        console.log(this.state);
+        
+        try {
+            const { user } = auth.createUserWithEmailAndPassword(email, password);
+            
+            createUserProfileDocument(user,  {displayName} );
+            this.setState({
+                displayName: '',
+                email: '',
+                password: '',
+                confirmPassword: '',
+                errors:{}
+            })
 
-        this.setState({
-            displayName: '',
-            email: '',
-            password: '',
-            confirmPassword: '',
-            errors:{}
-        })
+        } catch (error) {
+            console.log('error created', error)
+        }
+
+        
     }
     render() {
         const { displayName, email, password, confirmPassword, errors } = this.state;
@@ -89,7 +100,7 @@ export class SignUp extends Component {
                                 error={errors.confirmPassword}
                             />
                             <div className="form-group">
-                                <input className="btn btn-success btn-block" type="submit" value="Submit"/>
+                                <button className="btn btn-success btn-block" type="submit" >Sign up</button>
                             </div>
 
                         </form>
