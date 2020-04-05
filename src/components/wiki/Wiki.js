@@ -46,15 +46,26 @@ export class Wiki extends React.Component {
             <img className="content-image" src="/images/img_s.svg" alt=""/>
           </div>
         </div>
-        <div className="content-container-two">
-          <div className="content">Hello Dear.! </div>
-          <div className="content">Hello Dear.! </div>
-          <div className="content">Hello Dear.! </div>
-          <div className="content">Hello Dear.! </div>
-          
-          
+        <div className="content-container-contact">
+       
+          <div className="content-container-three">
+          <div className="content"><i class="fas fa-share-alt text-primary ">Share to</i></div>
+          <div className="content"><i class="fas fa-ad">recent news</i></div>
+          <div className="content"><i class="fas fa-cog">settings</i></div>
+          <div className="content"><i class="fas fa-wallet">wallet</i></div> 
         </div>
-    </div>
+        
+        <div className="content-container-three">
+            <div className="quick-links">hello</div>
+            </div>
+         
+        </div>
+   
+   
+      </div>
+      // End of new stle
+
+
       // <div className="main-container">
       /* <div className="title">
           <h1>WIKI</h1>

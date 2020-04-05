@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   background-color: #42455a;
-  padding: 20px 80px;
+  // padding: 20px 80px;
+  
   .section-title{
      margin: auto;
   }
@@ -11,6 +12,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
     .content-one-left-member{
   width: 60%;
   height: 340px;
@@ -34,20 +36,26 @@
     }
     
   }
-  .content-container-two{
-     width: 30%;
-     height: 70px ;
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     align-items: center;
-     background-color: red;
 
-     .content{
+  .content-container-contact{
     display: flex;
-    }
+    
+  .content-container-three{
+    width: 30%;
+    height: 70px ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: red;
   }
- 
+
+  .quick-links{
+    display: flex;
+    justify-content: flex-end;
+    background-color: green;
+  }
+}
   // new Style starts from here.!
 
 
