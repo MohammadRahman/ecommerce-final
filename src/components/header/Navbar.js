@@ -24,7 +24,7 @@ export const Navbar = ({ currentUser }) => {
               </Link>
 
               <Link to="/checkout" className="option">
-                cart
+                <CartIcon></CartIcon>
               </Link>
 
 

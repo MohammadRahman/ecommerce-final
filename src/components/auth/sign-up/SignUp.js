@@ -39,7 +39,9 @@ export class SignUp extends Component {
             this.setState({ errors: { confirmPassword: 'Password did not match' } })
             return;
         }
-
+        if (errors.length < 0) {
+              this.setState({errors:{success:'you can log in'}})
+          }
         
         try {
             const { user } = auth.createUserWithEmailAndPassword(email, password);

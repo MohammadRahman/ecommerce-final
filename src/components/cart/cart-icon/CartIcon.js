@@ -4,8 +4,9 @@ import './icon.scss';
 export const CartIcon = () => {
     return (
         <div className="cart-icon">
-            {/* <ShoppingLogo className="shopping-icon" /> */}
-            <span className="item-count">0</span>
+            <i className="fas fa-shopping-cart" onClick={()=> this.setState({showDetails: !this.state.showDetails})}>
+                <span className="item-count">0</span>
+            </i>
         </div>
     )
 }
