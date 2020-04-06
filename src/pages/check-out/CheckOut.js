@@ -5,7 +5,7 @@ import { CartItem } from '../../components/cart/cart-items/CartItem'
 import { selectCartTotal, selectCartItems} from '../../redux/reducers/cart-reducer/cart-seloctor/CartSelector'
 import {connect} from 'react-redux'
 
-const CheckOut = ({ cartItems, total }) => {
+const CheckOut = ({ cartItems,total}) => {
     return (
         <div className="check-out-container">
             <div className="header">
@@ -25,9 +25,14 @@ const CheckOut = ({ cartItems, total }) => {
                     <span>Remove</span>
                 </div>
          </div>  
-            
+         {/* {
+          cartItems.length ?
+          cartItems.map(item => 
+          <CartItem key={item.id} item={item} />
+        ) : <span className="lead text-center text-danger">Your Cart is Empty</span>} */}
+
             {
-                cartItems ?
+                cartItems.length ?
                     cartItems.map(item =>
                         <div className="item"><CartItem key={item.id} item={item}></CartItem></div>
                         )

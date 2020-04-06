@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 h1,
-h2 {
-  color: white;
+h2,h3,h4,h5,h6 {
+font-family: Shrikhand;
+font-weight: 400;
+color: white;
+}
+p{
+  font-family: Kaushan;
+  font-size: 20px;
+  color: black;
 }

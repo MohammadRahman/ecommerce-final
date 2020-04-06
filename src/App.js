@@ -13,6 +13,7 @@ import { auth, createUserProfileDocument } from './firebase/config';
 import { connect } from 'react-redux';
 import SignUp from "./components/auth/sign-up/SignUp";
 import {setCurrentUser} from './redux/actions/authAction'
+import { Docs } from "./components/docs/Docs";
 
 
 
@@ -52,6 +53,7 @@ export class App extends React.Component {
         <Navbar></Navbar>
         <Switch>
           <Route exact path="/" component={Homepage}/>
+          <Route exact path="/docs" component={Docs}/>
           <Route exact path="/categories" component={(Directory)}  />
           <Route exact path="/checkout" component={(CheckOut)}  ></Route>
           <Route exact path="/collections" component={(Shop)} ></Route>

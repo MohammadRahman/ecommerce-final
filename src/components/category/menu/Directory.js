@@ -6,14 +6,14 @@ export class Directory extends Component {
     sections: [
       {
         id: 1,
-        title: "Womens",
+        title: "Women",
         imageUrl: "/images/menu_images/img.jpg"
       },
       {
-        id: 2,
-        title: "Jackets",
-        imageUrl: "/images/menu_images/img6.jpeg"
-      },
+      id: 2,
+      title: "Men", 
+      imageUrl: "/images/menu_images/img2.jpg"
+    },
       {
         id: 3,
         title: "Shoes",
@@ -27,9 +27,9 @@ export class Directory extends Component {
       },
       {
         id: 5,
-        title: "Mens",
-        imageUrl: "/images/menu_images/img2.jpg"
-      }
+        title: "Jackets",
+        imageUrl: "/images/menu_images/img6.jpeg"
+      },
     ]
   };
   render() {

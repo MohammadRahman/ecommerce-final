@@ -5,11 +5,14 @@
     //   background-color: ;
     height: 400px;
     width: 100%;
+    margin: 7px 15px;
     background-size: cover;
     background-position: center;
 
     &:hover{
-      transform: rotate(7.5deg);
+      transform: rotate(2deg);
+      overflow: hidden;
+      
       
     }
   }

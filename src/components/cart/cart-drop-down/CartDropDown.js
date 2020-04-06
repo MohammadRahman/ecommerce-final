@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./cartDropdown.scss";
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import { connect } from "react-redux";
 import { CartItem } from "../cart-items/CartItem";
 
@@ -23,4 +23,4 @@ const CartDropDown = ({cartItems}) => {
 const mapStateToProps = state => ({
   cartItems:state.cart.cartItems
 })
-export default connect(mapStateToProps) (CartDropDown);
+export default withRouter(connect(mapStateToProps) (CartDropDown));

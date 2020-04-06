@@ -7,73 +7,38 @@ import { auth } from '../../firebase/config'
 import CartIcon from "../cart/cart-icon/CartIcon";
 
 
-export const Navbar =({currentUser})=> {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     showDetails: false
-  //   }
-  // }
-  // render() {
-  //   const { showDetails } = this.state;
-  //   const { currentUser } = this.props;
+export const Navbar = ({ currentUser }) => {
+  
   return (
-    <div className="">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-danger">
-        <div className="container">
-          <Link to="/" className="navbar-brand">ecommerce</Link>
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
+    <div className="header">
+  <Link to="/" className="logo-container">ecommerce</Link>
+          <div className="options">
+              <Link to="/" className="option">
                 Home
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/categories" className="nav-link">
-                categories
+              <Link to="/categories" className="option">
+                Categories
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/collections" className="nav-link">
-                shop
+                 <Link to="/collections" className="option">
+               Shop
               </Link>
-            </li>
-            <li className="nav-item">
-              {/* <Link><CartIcon /></Link> */}
-              
-              <Link to="/checkout" className="nav-link shopping-icon">
-                <div className="shopping-icon">
-                    <span className="item-count"><i className="fas fa-cart-plus">0</i></span>
-                </div>
-                 </Link>
-                 {/* <i className="fas fa-cart-plus" onClick={() => {
-                  this.setState({showDetails: !this.state.showDetails})
-                }}/> */}
-                
-              
-            </li>
-            <li className="nav-item">
-              {/* sign-in/sign-out functionality with auth */}
-              {currentUser ?
-                <div className="nav-link" onClick={() => auth.signOut()}>Sign-out</div>  
+
+              <Link to="/checkout" className="option">
+                cart
+              </Link>
+
+
+          {currentUser ?
+                <div className="option" onClick={() => auth.signOut()}>Sign-out</div>  
                 : <Link to="/login" className="nav-link">Sign-in</Link>
             }
-            </li>
-          </ul>
-          {/* cart toggle */}
-          {/* {showDetails? <CartDropDown></CartDropDown>:null} */}
-          
-        </div>
-      </nav>
-    </div>
+      </div>  
+      </div>
  
           );
-// }
 };
 
 const mapStateToProps = state => ({
   currentUser: state.user.currentUser
 })
 export default connect(mapStateToProps)(Navbar)
-// export default Navbar;
-// export default Navbar;

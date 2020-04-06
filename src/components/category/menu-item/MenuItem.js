@@ -1,5 +1,7 @@
 import React from "react";
 import "./menuitemStyle.scss";
+
+
 export const MenuItem = ({ title, imageUrl }) => (
   <div
     className="menu-item background-image"

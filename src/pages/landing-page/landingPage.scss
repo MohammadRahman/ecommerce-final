@@ -1,12 +1,25 @@
 .landing-page-image{
-  // background-image: url('/images/d.jpg');
+background-image: linear-gradient(
+    to right bottom,
+    rgba(73,165,126, .9) 30%,
+    transparent 70%
+  ),
+  url("/images/i.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .section-1 {
-  background-color: #ff4c68;
+  display: flex;
   max-height: 750px;
+ 
+  .section-1-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
 
   .text-body-container {
     margin-top: 70px;
@@ -20,13 +33,15 @@
   }
 }
 .section-2 {
-  // background-color: #b0e5f7;
+  
+  background-color: #b0e5f7;
+  opacity: 0.9;
   max-height: 750px;
 .icon{
-color:#ef8172;
+
 
 &:hover{
-  color: #ff4c68;
+  color: #e8b541;
 }
 }
 }

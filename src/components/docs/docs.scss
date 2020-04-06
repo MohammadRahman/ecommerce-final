@@ -1,0 +1,13 @@
+.docs-container{
+    display: flex;
+    height: 100vh;
+    padding: 40px;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(87,191,108,0.9)10%, transparent 90%),url('/images/i.jpg');
+.docs-container p{
+color: black;
+}
+}
+

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './signin.scss'
 import {InputComponent} from '../input-components/InputComponent'
 import {signInWithGoogle} from '../../../firebase/config'
 import { Link } from 'react-router-dom';
@@ -58,8 +59,9 @@ export class SignIn extends Component {
     render() {
         const { email, password, errors } = this.state;
         return (
-            <div className='container'>
-                <div className="card mt-5">
+            <div className="sign-in-container">
+            <div className='container' style={{width:'500px'}}>
+                <div className="card">
                     <div className="card-header lead text-center">User Sign-in</div>
                     <div className="card-body">
                         <form onSubmit={this.onSubmitHandler}>
@@ -73,7 +75,8 @@ export class SignIn extends Component {
                         </form>
                     </div>
                 </div>
-            </div>
+                </div>
+                </div>
         )
     }
 }
