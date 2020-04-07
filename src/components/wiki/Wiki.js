@@ -20,7 +20,8 @@ export class Wiki extends React.Component {
             <div className="tech-stack">
                 <h2>Tack Stack</h2>
                 <p>I have used React for front-end, Redux for state management, firebase for data storing, scss and bootstrap for styling</p>
-                 <div className="button" style={{marginTop:'50px'}}>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, rerum cupiditate veniam molestias, saepe cumque id vero ipsa quidem, sed maiores. Deleniti qui facilis beatae. Totam perspiciatis explicabo nulla ullam?</p> 
+                <div className="button" style={{ marginTop: '50px' }}>
                   <Link to="/docs">Go to Docs</Link>
                   </div> 
               </div>
