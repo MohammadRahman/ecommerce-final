@@ -6,8 +6,7 @@ import { connect } from "react-redux";
 import { auth } from '../../firebase/config'
 import CartIcon from "../cart/cart-icon/CartIcon";
 
-
-export const Navbar = ({ currentUser }) => {
+export const Navbar = ({ currentUser,showDetails }) => {
   
   return (
     <div className="header">
@@ -23,10 +22,11 @@ export const Navbar = ({ currentUser }) => {
                Shop
               </Link>
 
-              <Link to="/checkout" className="option">
-                <CartIcon></CartIcon>
-              </Link>
-
+        <div className="option">
+          <CartIcon></CartIcon>
+        </div>
+        {showDetails ? null : <CartDropDown></CartDropDown>}
+            
 
           {currentUser ?
                 <div className="option" onClick={() => auth.signOut()}>Sign-out</div>  
@@ -38,7 +38,8 @@ export const Navbar = ({ currentUser }) => {
           );
 };
 
-const mapStateToProps = state => ({
-  currentUser: state.user.currentUser
+const mapStateToProps = ({user:{currentUser},cart:{showDetails}}) => ({
+  currentUser,
+  showDetails
 })
 export default connect(mapStateToProps)(Navbar)

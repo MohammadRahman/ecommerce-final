@@ -5,7 +5,7 @@ import {addItem} from '../../../redux/actions/cartAction'
  
 const ItemsPreview = ({ item, addItem }) => {
   
-  const { imageUrl, name, price } = item;
+  const {id, imageUrl, name, price } = item;
   return (
     <div className="items-container">
       <div className="image" style={{ backgroundImage: `url(${imageUrl})` }} />

@@ -4,24 +4,25 @@ import {createStructuredSelector} from 'reselect'
 import { CartItem } from '../../components/cart/cart-items/CartItem'
 import { selectCartTotal, selectCartItems} from '../../redux/reducers/cart-reducer/cart-seloctor/CartSelector'
 import {connect} from 'react-redux'
+import { CheckoutItem } from './checkout-item/CheckoutItem';
 
 const CheckOut = ({ cartItems,total}) => {
     return (
-        <div className="check-out-container">
-            <div className="header">
-                <div className="header-row">
+        <div className="checkout-page">
+            <div className="checkout-header">
+                <div className="header-block">
                     <span>Products</span>
                 </div>
-                <div className="header-row">
+                <div className="header-block ">
                     <span>Description</span>
                 </div>
-                <div className="header-row">
+                <div className="header-block ">
                         <span>Quantity</span>
                 </div>
-                <div className="header-row">
+                <div className="header-block ">
                     <span>Price</span>
                 </div>
-                <div className="header-row">
+                <div className="header-block">
                     <span>Remove</span>
                 </div>
          </div>  
@@ -32,15 +33,11 @@ const CheckOut = ({ cartItems,total}) => {
         ) : <span className="lead text-center text-danger">Your Cart is Empty</span>} */}
 
             {
-                cartItems.length ?
-                    cartItems.map(item =>
-                        <div className="item"><CartItem key={item.id} item={item}></CartItem></div>
-                        )
-                    : <span className="lead text-center text-danger">Your Cart is Empty</span>
+                cartItems.map(item => <CheckoutItem key={item.id} item={item}></CheckoutItem>)
             }
             <hr></hr>
-            <div className="sub-total">
-                <div className="title">total -</div>
+            <div className="total">
+                <div className="title">total:</div>
                 <div className="price">${total}</div>
             </div>
             
