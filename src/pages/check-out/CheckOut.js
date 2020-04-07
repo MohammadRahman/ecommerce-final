@@ -33,7 +33,7 @@ const CheckOut = ({ cartItems,total}) => {
         ) : <span className="lead text-center text-danger">Your Cart is Empty</span>} */}
 
             {
-                cartItems.map(item => <CheckoutItem key={item.id} item={item}></CheckoutItem>)
+                cartItems.map(cartItem => <CheckoutItem key={cartItem.id} cartItem={cartItem}></CheckoutItem>)
             }
             <hr></hr>
             <div className="total">
